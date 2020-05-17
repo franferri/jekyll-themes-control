@@ -1,0 +1,16 @@
+current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/Users/franferri/.rbenv/versions/2.7.1/bin/ruby -I /Users/franferri/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200517-11329-dd2bms.rb extconf.rb
+creating Makefile
+
+current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" clean
+
+current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR="
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.bundle
+
+current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 fastfilereaderext.bundle ./.gem.20200517-11329-1livxm2

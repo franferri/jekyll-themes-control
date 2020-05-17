@@ -1,0 +1,16 @@
+current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/Users/franferri/.rbenv/versions/2.7.1/bin/ruby -I /Users/franferri/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200517-11329-13ebpo6.rb extconf.rb
+creating Makefile
+
+current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" clean
+
+current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR="
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make "DESTDIR=" install
+/usr/local/bin/ginstall -c -m 0755 ruby_http_parser.bundle ./.gem.20200517-11329-2t00im
