@@ -4,7 +4,7 @@ Jekyll plugin for building Jekyll sites using themes stored locally in a folder,
 
 Read https://jekyllrb.com/docs/themes/ to get more familiar with the themes in Jekyll
 
-[![Gem Version](https://badge.fury.io/rb/jekyll-themes-control.svg)](https://badge.fury.io/rb/jekyll-themes-control) [![Build Status](https://travis-ci.org/franferri/jekyll-themes-control.svg?branch=master)](https://travis-ci.org/franferri/jekyll-themes-control) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
+[![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
 
 ## Usage
