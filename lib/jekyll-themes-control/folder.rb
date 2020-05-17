@@ -11,7 +11,7 @@ module Jekyll
       def run
         return if theme_dir_exists? && !theme_dir_empty?
 
-        raise "The folder is not valid or don't exists: #{theme.root}" # theme.owner, theme.name
+        raise "The folder is not valid or don't exists: #{theme.root}"
       end
 
       private
@@ -26,9 +26,6 @@ module Jekyll
         Dir["#{theme.root}/*"].empty?
       end
 
-      def path_without_name_and_ref(path)
-        Jekyll.sanitized_path theme.root, path.split("/").drop(1).join("/")
-      end
     end
   end
 end
