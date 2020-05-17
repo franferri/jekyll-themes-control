@@ -47,7 +47,7 @@ Clone the theme folder from the git repository
 ```
 git clone https://github.com/jekyll/minima
 ```
-Move the ```minima``` folder inside the ```_themes``` folder
+Move the ```minima``` folder inside the ```_themes``` folder and remove the .git folder from it.
 
 ## Debugging
 
