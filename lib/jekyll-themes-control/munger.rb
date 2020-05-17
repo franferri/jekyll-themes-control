@@ -12,20 +12,12 @@ module Jekyll
       end
 
       def munge!
+        puts 'munge!munge!munge!munge!munge!'
         return unless raw_theme
-
-        unless theme.valid?
-          Jekyll.logger.error LOG_KEY, "#{raw_theme.inspect} is not a valid theme"
-          return
-        end
-
-        Jekyll.logger.info LOG_KEY, "Using theme #{theme.name_with_owner}"
         unless munged?
-          folder.run
           configure_theme
         end
-        enqueue_theme_cleanup
-
+        puts 'munge!munge!munge!munge!munge!'
         theme
       end
 
@@ -43,26 +35,19 @@ module Jekyll
         config[CONFIG_KEY]
       end
 
-      def folder
-        @folder ||= Folder.new(theme)
-      end
-
       def configure_theme
         return unless theme
 
+        puts '----------------' + theme.root
+        puts '----------------' + theme.includes_path
+
         site.config["theme"] = theme.name
         site.theme = theme
-        site.theme.configure_sass if site.theme.respond_to?(:configure_sass)
+        #site.theme.configure_sass if site.theme.respond_to?(:configure_sass)
         site.send(:configure_include_paths)
-        site.plugin_manager.require_theme_deps
+        #site.plugin_manager.require_theme_deps
       end
 
-      def enqueue_theme_cleanup
-        at_exit do
-          Jekyll.logger.debug LOG_KEY, "Cleaning up #{theme.root}"
-          FileUtils.rm_rf theme.root
-        end
-      end
     end
   end
 end

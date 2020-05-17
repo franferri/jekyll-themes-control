@@ -1,5 +1,5 @@
 current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/sassc-2.3.0/ext
-/Users/franferri/.rbenv/versions/2.7.1/bin/ruby -I /Users/franferri/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200517-12927-1odpg8w.rb extconf.rb
+/Users/franferri/.rbenv/versions/2.7.1/bin/ruby -I /Users/franferri/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200517-19753-1s8547z.rb extconf.rb
 creating Makefile
 
 current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/sassc-2.3.0/ext
@@ -79,4 +79,4 @@ linking shared-object sassc/libsass.bundle
 
 current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/sassc-2.3.0/ext
 make "DESTDIR=" install
-/usr/local/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20200517-12927-r0v80x/sassc
+/usr/local/bin/ginstall -c -m 0755 libsass.bundle ./.gem.20200517-19753-ep49ki/sassc

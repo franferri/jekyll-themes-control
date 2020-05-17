@@ -1,0 +1,19 @@
+#!/bin/sh
+
+set -e
+
+cd /Users/franferri/projects/jekyll-themes-control
+
+bundle install
+
+gem build jekyll-themes-control.gemspec
+
+cd /Users/franferri/projects/my-awesome-site
+
+bundle install
+
+gem install --local /Users/franferri/projects/jekyll-themes-control/jekyll-themes-control-0.1.0.gem
+
+bundle exec jekyll serve --trace
+
+cd /Users/franferri/projects/jekyll-themes-control

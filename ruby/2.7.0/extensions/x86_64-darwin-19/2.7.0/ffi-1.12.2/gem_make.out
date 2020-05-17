@@ -1,5 +1,5 @@
 current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/ffi-1.12.2/ext/ffi_c
-/Users/franferri/.rbenv/versions/2.7.1/bin/ruby -I /Users/franferri/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200517-11329-f0n29j.rb extconf.rb
+/Users/franferri/.rbenv/versions/2.7.1/bin/ruby -I /Users/franferri/.rbenv/versions/2.7.1/lib/ruby/2.7.0 -r ./siteconf20200517-19753-zwky6p.rb extconf.rb
 checking for ffi_call() in -lffi... yes
 checking for ffi_closure_alloc()... yes
 checking for shlwapi.h... no
@@ -51,4 +51,4 @@ linking shared-object ffi_c.bundle
 
 current directory: /Users/franferri/projects/jekyll-themes-control/ruby/2.7.0/gems/ffi-1.12.2/ext/ffi_c
 make "DESTDIR=" install
-/usr/local/bin/ginstall -c -m 0755 ffi_c.bundle ./.gem.20200517-11329-16x512s
+/usr/local/bin/ginstall -c -m 0755 ffi_c.bundle ./.gem.20200517-19753-7fl38k

@@ -9,12 +9,8 @@ module Jekyll
         super(@raw_theme)
       end
 
-      def valid?
-        return false unless @raw_theme
-      end
-
       def root
-        @root ||= File.realpath "#{Dir.pwd}/_themes"
+        @root ||= File.realpath "#{Dir.pwd}/_themes/#{@raw_theme}"
       end
 
     end
