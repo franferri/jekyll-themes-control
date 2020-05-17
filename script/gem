@@ -8,7 +8,7 @@ bundle install
 
 gem build jekyll-themes-control.gemspec
 
-cd /Users/franferri/projects/my-awesome-site
+cd /Users/franferri/projects/franferri.gitlab.io
 
 bundle install
 

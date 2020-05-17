@@ -10,7 +10,11 @@ module Jekyll
       end
 
       def root
-        @root ||= File.realpath "#{Dir.pwd}/_themes/#{@raw_theme}"
+        path = "#{Dir.pwd}/_themes/#{@raw_theme}"
+        @root ||= File.realpath path
+      rescue Errno::ENOENT, Errno::EACCES, Errno::ELOOP
+        raise "Path #{path} does not exist, is not accessible "\
+        "or includes a symbolic link loop"
       end
 
     end

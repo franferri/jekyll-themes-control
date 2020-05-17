@@ -1,0 +1,17 @@
+# Jekyll
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+.gem
+
+# Apple OSX, Windows, ...
+.DS_Store
+Thumbs.db
+*.log
+
+######### IntelliJ
+.idea/
+*.ipr
+*.iws
+*.iml

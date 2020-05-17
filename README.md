@@ -1,43 +1,61 @@
-# Jekyll Themes Control Plugin
+# Jekyll Themes Control
 
-This pluging
-* Let you have all your themes in a folder instead of gem files
+Jekyll plugin for building Jekyll sites using themes stored locally in a folder, not in .gem files
 
-## Why?
+Read https://jekyllrb.com/docs/themes/ to get more familiar with the themes in Jekyll
 
-* No more themes as gem packages installed in your environment
+[![Gem Version](https://badge.fury.io/rb/jekyll-themes-control.svg)](https://badge.fury.io/rb/jekyll-themes-control) [![Build Status](https://travis-ci.org/franferri/jekyll-themes-control.svg?branch=master)](https://travis-ci.org/franferri/jekyll-themes-control) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
-Because if you want to modify the theme, you need to **override** the original sources (in the gem) in the Jekyll installation sources.
 
-This is terrible for:
-	* Fast development iterations (the key of productivity in development)
-	* Mainteinability short and long term of the code
-	* Prone to have coupled code between the template override and the source of the page
-	* Gem files require certain versions of software, for example a template may work perfectly in Jekyll 4 but is locked to Jekyll 1 in the gem file
+## Usage
 
-* No more mixing and mingling all theme files with your sources that prevents you to change fast between themes
+1. Add the following to your Gemfile
 
-Official documentation tells you to pour the gem contents in your source code as a final solution. Well, I listed above the reasons why this is not a great idea.
+  ```ruby
+  gem "jekyll-themes-control"
+  ```
 
-## Feature request
+  and run `bundle install` to install the plugin
 
-While I was testing Jekyll and comparing it with other similar static websites generators, it really felt very unproductive to me.
+2. Add the following to your site's `_config.yml` to activate the plugin
 
-I have contacted Jekyll project team about this topic, with a feature request. I was not the first doing this...
+  ```yml
+  plugins:
+    - jekyll-themes-control
+  ```
+  Note: If you are using a Jekyll version less than 3.5.0, use the `gems` key instead of `plugins`.
 
-* My request: https://github.com/jekyll/jekyll/issues/8185
-* Random previous request: https://github.com/jekyll/jekyll/issues/6199
+3. Add the following to your site's `_config.yml` to choose your theme. Remove the theme line you currently have
 
-They gave me a good response and very fast. Jekyll team is great and quick. In short they told me: "The primary reason for adopting gem-based theme architecture was to ease versioning and distribution"
+  ```yml
+  themes_control: minima
+  ```
 
-I disagree, I think that is a poor design decision and I decided to fix it with a plugin.
+4. Put your theme files in the folder `_themes`
 
-Encapsulating themes in gem files that you install in your ruby installation to solve verioning and distribution is breaking the agility you need to develop fast and be productive.
+Extract the files from your locally installed .gem
 
-Having the sources in a public git repository (you can tag them) solves both.
+```
+open $(bundle info --path minima)
+```
+Then create the folder ```minima``` in ```_themes``` and copy the files inside
+
+or
+
+Clone the theme folder from the git repository
+
+```
+git clone https://github.com/jekyll/minima
+```
+Move the ```minima``` folder inside the ```_themes``` folder
+
+## Debugging
+
+Adding `--verbose` to the `build` or `serve` command may provide additional information.
+
 
 ## Inspiration
 
-Ben Balter plugin: https://github.com/benbalter/jekyll-remote-theme
-
-Ben did a great plugin, works like a charm. This repo is inspired in his plugin, I'm extending the idea to local foldres.
+* https://github.com/jekyll/jekyll/issues/8185
+* https://github.com/jekyll/jekyll/issues/6199
+* https://github.com/benbalter/jekyll-remote-theme

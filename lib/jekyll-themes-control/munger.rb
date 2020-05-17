@@ -12,12 +12,10 @@ module Jekyll
       end
 
       def munge!
-        puts 'munge!munge!munge!munge!munge!'
         return unless raw_theme
         unless munged?
           configure_theme
         end
-        puts 'munge!munge!munge!munge!munge!'
         theme
       end
 
@@ -38,14 +36,9 @@ module Jekyll
       def configure_theme
         return unless theme
 
-        puts '----------------' + theme.root
-        puts '----------------' + theme.includes_path
-
         site.config["theme"] = theme.name
         site.theme = theme
-        #site.theme.configure_sass if site.theme.respond_to?(:configure_sass)
         site.send(:configure_include_paths)
-        #site.plugin_manager.require_theme_deps
       end
 
     end
