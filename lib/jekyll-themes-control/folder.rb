@@ -2,7 +2,7 @@
 
 module Jekyll
   module ThemesControl
-    class Downloader
+    class Folder
 
       def initialize(theme)
         @theme = theme

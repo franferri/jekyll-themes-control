@@ -21,7 +21,7 @@ module Jekyll
 
         Jekyll.logger.info LOG_KEY, "Using theme #{theme.name_with_owner}"
         unless munged?
-          downloader.run
+          folder.run
           configure_theme
         end
         enqueue_theme_cleanup
@@ -43,8 +43,8 @@ module Jekyll
         config[CONFIG_KEY]
       end
 
-      def downloader
-        @downloader ||= Downloader.new(theme)
+      def folder
+        @folder ||= Folder.new(theme)
       end
 
       def configure_theme

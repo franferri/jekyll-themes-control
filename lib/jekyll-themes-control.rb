@@ -11,9 +11,9 @@ $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 module Jekyll
   module ThemesControl
-    class DownloadError < StandardError; end
+    class FolderError < StandardError; end
 
-    autoload :Downloader, "jekyll-themes-control/downloader"
+    autoload :Folder, "jekyll-themes-control/folder"
     autoload :Munger, "jekyll-themes-control/munger"
     autoload :Theme, "jekyll-themes-control/theme"
     autoload :VERSION, "jekyll-themes-control/version"
