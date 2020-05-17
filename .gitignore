@@ -8,7 +8,6 @@ ruby/
 
 # Apple OSX, Windows, ...
 .DS_Store
-Thumbs.db
 *.log
 
 ######### IntelliJ
