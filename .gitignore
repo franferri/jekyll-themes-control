@@ -3,7 +3,8 @@ _site/
 .sass-cache/
 .jekyll-cache/
 .jekyll-metadata
-.gem
+*.gem
+ruby/
 
 # Apple OSX, Windows, ...
 .DS_Store
