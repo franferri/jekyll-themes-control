@@ -6,6 +6,7 @@ Read https://jekyllrb.com/docs/themes/ to get more familiar with the themes in J
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](http://makeapullrequest.com)
 
+**Recommended reading**: If you have a website already and you want to convert it to Jekyll this plugin will help you, also this article: https://jekyllrb.com/tutorials/convert-site-to-jekyll/
 
 ## Usage
 
